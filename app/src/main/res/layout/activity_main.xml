@@ -5,15 +5,56 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#40158A"
+    tools:context=".MainActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <Button
+        android:id="@+id/startbutton"
+        android:layout_width="135dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="141dp"
+        android:backgroundTint="#6F1C1C"
+        android:text="Start"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/welcometextView"
+        android:layout_width="375dp"
+        android:layout_height="352dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="50dp"
+        android:background="#FBF9F9"
+        android:text="The use of this application is to help study tool that can test a users knowledge on a specific topic through the use of short questions in flashcard form.                                                                                                          The topic that this application will be on is History"
+        android:textAlignment="center"
+        android:textColor="#070707"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/startbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="372dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="8dp"
+        android:background="#090909"
+        android:text="Welcome to Flash Questions."
+        android:textAlignment="center"
+        android:textColor="#FBFAFA"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/welcometextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
