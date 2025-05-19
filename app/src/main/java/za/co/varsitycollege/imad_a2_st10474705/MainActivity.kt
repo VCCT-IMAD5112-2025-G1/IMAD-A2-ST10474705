@@ -17,14 +17,12 @@ class MainActivity : AppCompatActivity() {
         val startButton =  findViewById<Button>(R.id.startbutton)
 
         startButton?.setOnClickListener {
-
             Toast.makeText(
                 this@MainActivity,
                 "Started FlashCards",Toast.LENGTH_LONG
             ).show()
 
             val intent=Intent(this,QuestionScreen::class.java)
-
             startActivity(intent)
         }
     }

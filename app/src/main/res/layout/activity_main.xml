@@ -26,12 +26,12 @@
 
     <TextView
         android:id="@+id/welcometextView"
-        android:layout_width="375dp"
-        android:layout_height="352dp"
+        android:layout_width="377dp"
+        android:layout_height="176dp"
         android:layout_marginStart="18dp"
         android:layout_marginTop="128dp"
         android:layout_marginEnd="18dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="226dp"
         android:background="#FBF9F9"
         android:text="The use of this application is to help study tool that can test a users knowledge on a specific topic through the use of short questions in flashcard form.                                                                                                          The topic that this application will be on is History"
         android:textAlignment="center"
