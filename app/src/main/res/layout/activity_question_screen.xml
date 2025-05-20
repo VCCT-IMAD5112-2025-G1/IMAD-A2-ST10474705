@@ -78,6 +78,7 @@
         android:layout_width="138dp"
         android:layout_height="76dp"
         android:layout_marginStart="136dp"
+        android:layout_marginTop="277dp"
         android:layout_marginEnd="137dp"
         android:layout_marginBottom="37dp"
         android:backgroundTint="#CDDC39"
@@ -85,18 +86,7 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="148dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="131dp"
-        android:layout_marginEnd="132dp"
-        android:layout_marginBottom="94dp"
-        android:background="#FBFBFB"
-        app:layout_constraintBottom_toTopOf="@+id/resetbutton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trueButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

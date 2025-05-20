@@ -8,16 +8,67 @@
 
     <Button
         android:id="@+id/reviewButton"
-        android:layout_width="193dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="109dp"
+        android:layout_width="155dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="31dp"
         android:layout_marginTop="620dp"
-        android:layout_marginEnd="109dp"
-        android:layout_marginBottom="59dp"
+        android:layout_marginEnd="225dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#6F1C1C"
         android:text="Review"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="155dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#CDDC39"
+        android:text="Exit"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/reviewButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoretextView"
+        android:layout_width="301dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="450dp"
+        android:background="#FBFBFB"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/reviewButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/feedbacktextView"
+        android:layout_width="301dp"
+        android:layout_height="275dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="94dp"
+        android:background="#FFFCFC"
+        android:textAlignment="center"
+        android:textColor="#1F1F1F"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/reviewButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoretextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

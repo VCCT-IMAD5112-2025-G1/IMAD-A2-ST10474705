@@ -14,14 +14,18 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+        //initializing the buttons id
         val startButton =  findViewById<Button>(R.id.startbutton)
 
+        //Declaring the button so any code put inside the brackets will only run once button is clicked
         startButton?.setOnClickListener {
+            //code to create pop-up icon that lets the user know the button was clicked
             Toast.makeText(
                 this@MainActivity,
                 "Started FlashCards",Toast.LENGTH_LONG
             ).show()
 
+            //code to link once the button is clicked to take the user to the QuestionScreen page
             val intent=Intent(this,QuestionScreen::class.java)
             startActivity(intent)
         }
