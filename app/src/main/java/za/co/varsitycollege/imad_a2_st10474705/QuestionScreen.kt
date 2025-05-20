@@ -56,6 +56,7 @@ class QuestionScreen : AppCompatActivity() {
 
         //opening coding for true button
         trueButton?.setOnClickListener {
+            //creating pop-up to let user know button was clicked
             Toast.makeText(
                 this@QuestionScreen,
                 "True Button Clicked",Toast.LENGTH_LONG
@@ -65,6 +66,7 @@ class QuestionScreen : AppCompatActivity() {
 
         //opening coding for false button
         falseButton?.setOnClickListener {
+            //creating pop-up to let user know button was clicked
             Toast.makeText(
                 this@QuestionScreen,
                 "False Button Clicked",Toast.LENGTH_LONG
@@ -72,20 +74,28 @@ class QuestionScreen : AppCompatActivity() {
             checkAnswer(false)
         }
 
+        //opening coding for reset button
         resetButton?.setOnClickListener {
+            //creating pop-up to let user know button was clicked
             Toast.makeText(
                 this@QuestionScreen,
                 "Restarted Quiz", Toast.LENGTH_LONG
             ).show()
 
+            //code that once the button is clicked will take the user back to the welcome page
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }
+
+    //initializing textview id to be used in code
     private var questionsTextView = findViewById<TextView>(R.id.questionstextView)
     
+
+    //creating function for textview for questions to appear in
     @SuppressLint("SetTextI18n")
     private fun showQuestion(){
+        //if function to iterate through each question until all 5 questions have been answered
         if (currentQuestionIndex < questions.size){
             questionsTextView.text = questions[currentQuestionIndex]
         }else{
@@ -93,8 +103,10 @@ class QuestionScreen : AppCompatActivity() {
         }
     }
     
+    //creating function that will check answer in array compared to answer of user
     private fun checkAnswer(userAnswer: Boolean){
         val right = answers[currentQuestionIndex]
+        //code to display pop-up if answer was correct or incorrect
         if (userAnswer == right){
             score++
             Toast.makeText(this,"Correct",Toast.LENGTH_LONG).show()
@@ -112,6 +124,7 @@ class QuestionScreen : AppCompatActivity() {
                 trueButton.isEnabled = true
                 falseButton.isEnabled = true
             }else{
+                //sending score to score screen to be displayed
                 val intent = Intent(this, ScoreScreen::class.java)
                 intent.putExtra("score",score)
                 startActivity(intent)
